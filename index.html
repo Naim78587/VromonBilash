@@ -31,9 +31,9 @@
       <header class="header" data-header>
         <div class="container">
             <a href="#" class="logo">
-                <img src="images/logo.png" alt="Loading logo" width="120" height="22">
+                <img src="images/logo.png" alt="Loading logo" width="220" height="38">
             </a>
-            <nav class="navbar active" data-navbar>
+            <nav class="navbar" data-navbar>
                 <div class="navbar-top">
                     <a href="#" class="logo">
                         <img src="images/logo.png" alt="Loading logo" width="120" height="22">
@@ -71,6 +71,71 @@
             <div class="overlay" data-overlay data-nav-toggler></div>
         </div>
       </header>
+      <!-- Header ends here -->
+       
+       <main>
+        <!-- Slider starts here -->
+        <section class="image-slider" data-slider>
+            <div class="slider-container">
+              <div class="slide">
+                <img src="images/image1.png" alt="Beautiful Scenery 1">
+              </div>
+              <div class="slide">
+                <img src="images/image2.jpg" alt="Beautiful Scenery 2">
+              </div>
+              <div class="slide">
+                <img src="images/image3.jpg" alt="Beautiful Scenery 3">
+              </div>
+            </div>
+          
+            <button class="slider-btn prev" aria-label="Previous Slide" data-prev>
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            <button class="slider-btn next" aria-label="Next Slide" data-next>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+        </section>
+        <!-- Slider ends here -->
+        <article>
+            <!-- hero section -->
+             <section class="section hero has-bg-image" area-label="hero" style="background-image: url('images/hero.png');">
+                <div class="container">
+                    <div class="hreo-content">
+                        <p class="hero-subtitle">
+                            Explore the World <img src="images/globe.png" alt="world icon" class="img" width="20" height="20">
+                        </p>
+                        <h1 class="h1 title hero-title">
+                            It's a Big World Out There, Go Explore
+                        </h1>
+
+                        <p class="hero-text">
+                            We always make our customer happy by providing 
+                            as many choice as possible
+                        </p>
+
+                        <div class="wrapper">
+                            <a href="#" class="btn btn-secondary">
+                                <span class="span">Plan a Trip</span>
+                                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                                    
+                            </a>
+                            <button class="hero-btn">
+                                <div class="btn-img">
+                                    <img src="images/traveller.jpg" alt="our story" class="img-cover" width="100" height="130">
+                                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                                </div>
+                                <p class="text">Watch Our Story</p>
+                            </button>
+                        </div>
+                    </div>
+                    <figure class="hero-banner">
+                        <img src="images/hero.png" alt="hero banner" class="w-100" width="631" height="640">
+                    </figure>
+                </div>
+             </section>
+        </article> 
+       </main>      
+       
     <script src="script.js"></script>
     <!-- Ionicon link -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

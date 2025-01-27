@@ -117,6 +117,10 @@ body{
     color: var(--text-granite-gray);
     font-size:var(--fontSize-6);
     line-height: 1.8;
+    height: 300vh;
+}
+body.nav-active{
+    overflow: hidden;
 }
 /*Reset code ends*/
 /*Reused codes*/
@@ -141,6 +145,13 @@ body{
 .btn-primary:is(:hover, :focus-visible){
     background-color: var(--bg-ocean-blue);
     box-shadow: var(--shadow-2);
+}
+.btn-secondary{
+    background-color: var(--bg-red-salsa);
+}
+.btn-secondary:is(:hover, :focus-visible){
+    background-color: var(--bg-english-vermillion);
+    box-shadow: var(--shadow-3);
 }
 /*Reused codes*/
 
@@ -193,10 +204,6 @@ body{
 /*Preloader endss*/
 
 /*header starts*/
-.overlay{
-    display: none;
-}
-
 .header .container{
     display: flex;
     justify-content: space-between;
@@ -305,4 +312,99 @@ body{
     opacity: 0.8;
 
 }
+@media (max-width: 768px) {
+    .header-action {
+      margin-block-start: 10px; 
+      padding-block-start: 10px;
+    }
+  }
+  
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bg-white);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-1);
+}
+.overlay.active{
+    visibility: visible;
+    opacity: 0.5;
+}
 /*header ends*/
+
+/* Image Slider Styles */
+.image-slider {
+    width: 80vw; 
+    height: 55vh; 
+    margin: 0 auto; 
+    margin-top: 8rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: var(--shadow-1); 
+  }
+  
+  .slider-container {
+    display: flex;
+    transition: transform 500ms ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+  }
+  
+  .slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--bg-black-alpha-20);
+    color: var(--text-white);
+    border-radius: var(--radius-circle);
+    padding: 10px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  
+  .slider-btn.prev {
+    left: 10px;
+  }
+  
+  .slider-btn.next {
+    right: 10px;
+  }
+  
+  .slider-btn:hover {
+    background-color: var(--bg-majorelle-blue);
+  }
+  
+  .slider-btn ion-icon {
+    font-size: 24px;
+  }
+
+  @media (max-width: 480px) {
+    .image-slider {
+      width: 95vw;
+      height: 20vh;
+    }
+  
+    .slider-btn {
+      width: 30px; 
+      height: 30px;
+      font-size: 1.2rem; 
+    }
+  
+    .slide img {
+      object-fit: cover; 
+    }
+  }
+/*Slider ends*/  
