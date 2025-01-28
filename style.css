@@ -7,7 +7,7 @@
     --bg-lavender-blush: hsl(0, 100%, 98%);
     --bg-majorelle-blue: hsl(249, 95%, 63%);
     --bg-ocean-blue: hsl(249, 63%, 54%);
-    --bg-majorelle-blue-alpha-5: ☐ hsla(249, 95%, 63%, 0.05);
+    --bg-majorelle-blue-alpha-5: hsla(249, 95%, 63%, 0.05);
     --bg-misty-rose: hsl(0, 100%, 95%);
     --bg-red-salsa: hsl(357, 94%, 63%);
     --bg-red-salsa-alpha-5: hsla(357, 94%, 63%, 0.05);
@@ -188,6 +188,15 @@ body.nav-active{
 }
 .w-100{
     width: 100%;
+}
+
+.section-subtitle{
+    color: var(--text-majorelle-blue);
+    font-weight: var(--weight-medium);
+    text-transform: uppercase;
+}
+.section-title{
+    margin-block:10px;
 }
 /*Reused codes*/
 
@@ -516,3 +525,26 @@ body.nav-active{
 }
 
 /*Hero Ends*/
+
+/*Service card starts*/
+.service .container{
+    display: grid;
+    gap: 25px;
+}
+.service-card:nth-child(2){
+    background-color: var(--bg-chrome-yellow-alpha-5);
+}
+.service-card:nth-child(3){
+    background-color: var(--bg-red-salsa-alpha-5);
+}
+.service-card:nth-child(4){
+    background-color: var(--bg-majorelle-blue-alpha-5);
+}
+.service-card{
+    padding: 25px 20px;
+    border-radius: var(--radius-20);
+}
+.service-card .card-title{
+    margin-block: 10px 5px;
+}
+/*Service card endss*/
