@@ -18,6 +18,10 @@
      rel="stylesheet">
      <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
+    <!-- Confusing image 1 -->
+    <link rel="preload" as="image" href="images/hero.png"> 
+    <!-- Confusing image 2 -->
+    <link rel="preload" as="image" href="images/preloader.png">
 </head>
 <body>
     <!-- Preloader -->
@@ -97,8 +101,9 @@
         </section>
         <!-- Slider ends here -->
         <article>
-            <!-- hero section -->
-             <section class="section hero has-bg-image" area-label="hero" style="background-image: url('images/hero.png');">
+            <!-- hero section start-->
+             <!-- Confusing image 3 style="background-image: url('images/hero.png');" -->
+             <section class="section hero has-bg-image" area-label="hero">
                 <div class="container">
                     <div class="hreo-content">
                         <p class="hero-subtitle">
@@ -133,6 +138,12 @@
                     </figure>
                 </div>
              </section>
+             <!-- hero section ends-->
+              <!-- Service section start -->
+               <section class="section service" aria-label="service">
+                
+               </section>
+              <!-- Service section end -->
         </article> 
        </main>      
        
