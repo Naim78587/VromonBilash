@@ -198,6 +198,12 @@ body.nav-active{
 .section-title{
     margin-block:10px;
 }
+
+.img-holder{
+    aspect-ratio: var(--width)/var(--height);
+    background-color: var(--bg-gainsboro);
+    overflow: hidden;
+}
 /*Reused codes*/
 
 /*Preloader starts*/
@@ -548,3 +554,75 @@ body.nav-active{
     margin-block: 10px 5px;
 }
 /*Service card endss*/
+
+/*Destination Card starts*/
+.desti .section-title {
+    margin-block-end: 40px;
+}
+
+.desti-list {
+    display: grid;
+    gap: 30px;
+}
+
+.desti-card .card-banner {
+    position: relative;
+    border-radius: var(--radius-30);
+    overflow: hidden; 
+}
+
+.card-banner img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-banner:hover img {
+    transform: scale(1.05);
+}
+.desti-card .card-prixe{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--bg-white);
+    color: var(--text-granite-gray);
+    font-weight: var(--weight-bold);
+    font-size: 1.8rem;
+    line-height: 1.45;
+    padding: 5px 15px;
+    border-radius: var(--radius-pill);
+}
+.desti-card .card-title{
+    margin-block: 15px 5px;
+    transition: var(--transition-1);
+}
+.desti-card .card-title:is(:hover, :focus-visible){
+    color: var(--text-majorelle-blue);
+}
+.card-ratting {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.desti-card .card-ratting{
+    margin-block-start: 10px;
+    gap: 10px;
+}
+
+.card-ratting .span {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.desti-card .card-ratting .span{
+    background-color: var(--bg-sunglow-alpha-10);
+    gap: 5px;
+    padding: 4px 12px;
+    border-radius: var(--radius-pill);
+}
+.desti-card .card-ratting ion-icon{
+    color: var(--text-sunglow);
+}
+.desti .btn{
+    margin-inline: auto;
+    margin-block-start: 40px;
+}
+/*Destination Card ends*/
