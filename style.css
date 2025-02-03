@@ -657,3 +657,13 @@ body.nav-active{
     filter: drop-shadow(var(--shadow-4));
 }
 /*Experience section ends*/
+/*gallery section starts*/
+.gallery .section-title {
+    margin-block-end: 40px;
+}
+
+.gallery-list {
+    display: grid;
+    gap: 15px;
+}
+/*gallery section ends*/
