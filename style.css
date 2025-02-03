@@ -469,8 +469,8 @@ body.nav-active{
     gap: 50px;
 }
 .hero-subtitle{
-    background-color: var(--bg-misty-rose);
-    color: var(--text-light-coral);
+    background-color: #FFB6AE;
+    color: var(--text-granite-gray);
     font-size: var(--fontSize-7);
     display: flex;
     align-items: center;
@@ -626,3 +626,34 @@ body.nav-active{
     margin-block-start: 40px;
 }
 /*Destination Card ends*/
+/*Experience section starts*/
+.exp .container{
+    display: grid;
+    gap: 50px;
+}
+.exp-banner{
+    position: relative;
+
+}
+.exp .section-text{
+    margin-inline-end: 20px;
+}
+.exp-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block-start: 15px;
+}
+.exp-item .item-title{
+    color: var(--text-majorelle-blue);
+    font-size: 3.6rem;
+    font-weight: var(--weight-bold);
+}
+.exp-shape{
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    width: 25%;
+    filter: drop-shadow(var(--shadow-4));
+}
+/*Experience section ends*/
